@@ -1,101 +1,56 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import FillerRating from './components/FillerRating'
-import Slideshow from './components/Slideshow'
+import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import { seasons } from './data/episodes'
-import { getEpisodeData } from './data/episodes'
+import Slideshow from './components/Slideshow'
+import EpisodeSelector from './components/EpisodeSelector'
 
-// Slideshow images
-const slideshowImages = [
-  '/assets/1.jpg',
-  '/assets/2.jpg',
-  '/assets/3.jpg',
+const episodes = [
+  {
+    id: 1,
+    title: 'Episodio 1: Il Giorno in cui sono diventato uno Shinigami',
+    thumbnail: '/assets/thumbnails/ep1.jpg',
+    description: 'Ichigo Kurosaki incontra Rukia Kuchiki e diventa uno Shinigami',
+  },
+  {
+    id: 2,
+    title: 'Episodio 2: Il Lavoro di uno Shinigami',
+    thumbnail: '/assets/thumbnails/ep2.jpg',
+    description: 'Ichigo inizia il suo lavoro come Shinigami sostituto',
+  },
+  {
+    id: 3,
+    title: 'Episodio 3: Il Fratello Maggiore',
+    thumbnail: '/assets/thumbnails/ep3.jpg',
+    description: 'Ichigo incontra il fratello maggiore di Rukia',
+  },
 ]
 
 export default function Home() {
   return (
-    <>
+    <main className="min-h-screen bg-black">
       <Navbar />
-      <main className="min-h-screen bg-netflix-black">
-        {/* Hero Section with Slideshow */}
-        <div className="relative h-[90vh] w-full">
-          {/* Slideshow Background */}
-          <div className="absolute inset-0">
-            <Slideshow images={slideshowImages} interval={6000} />
-          </div>
+      
+      {/* Hero Section */}
+      <Hero />
 
-          {/* Gradient Overlays */}
-          <div className="absolute inset-0 bg-gradient-to-t from-netflix-black via-netflix-black/80 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-r from-netflix-black to-transparent" />
-
-          {/* Content */}
-          <div className="relative h-full flex items-center px-4 md:px-16 z-20">
-            <div className="max-w-2xl space-y-6">
-              <div className="relative w-[300px] h-[100px]">
-                <Image
-                  src="/assets/logo.png"
-                  alt="BLEACH Core"
-                  fill
-                  className="object-contain object-left"
-                  priority
-                />
-              </div>
-              <p className="text-lg md:text-xl text-gray-300">
-                Sperimenta i capitoli più importanti di BLEACH, selezionati per l'esperienza di visione più completa.
-              </p>
-              <Link 
-                href="/episodes/s1/1"
-                className="netflix-button inline-block"
-              >
-                Guarda Ora
-              </Link>
-            </div>
-          </div>
+      {/* Content Section */}
+      <section id="content" className="relative py-20">
+        {/* Slideshow Background */}
+        <div className="absolute inset-0">
+          <Slideshow />
         </div>
 
-        {/* Episodes Grid */}
-        <div className="px-4 md:px-16 py-12 bg-netflix-black">
-          {seasons.map((season) => (
-            <div key={season.id} className="mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">{season.name}</h2>
-              <h3 className="text-xl text-orange-600 mb-8">{season.nickname}</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                {Array.from({ length: season.episodeCount }, (_, i) => i + 1).map((episodeId) => {
-                  const episode = getEpisodeData(`s${season.id}`, episodeId.toString())
-                  return (
-                    <div key={episode.id} className="episode-card group">
-                      <div className="episode-thumbnail">
-                        <Image
-                          src={episode.thumbnail}
-                          alt={episode.title}
-                          fill
-                          className="object-cover transition-transform group-hover:scale-105"
-                        />
-                        <div className="episode-overlay group-hover:bg-opacity-50">
-                          <Link
-                            href={`/episodes/s${episode.season}/${episode.id}`}
-                            className="netflix-button opacity-0 group-hover:opacity-100 transition-opacity"
-                          >
-                            Guarda Ora
-                          </Link>
-                        </div>
-                      </div>
-                      <div className="p-4">
-                        <h3 className="text-lg font-semibold text-white mb-2">{episode.title}</h3>
-                        <p className="text-netflix-gray text-sm mb-3">{episode.description}</p>
-                        <FillerRating rating={episode.fillerRating} />
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
-          ))}
+        {/* Gradient Overlays */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-white mb-8">Episodi</h2>
+          <EpisodeSelector episodes={episodes} season={1} />
         </div>
-      </main>
+      </section>
+
       <Footer />
-    </>
+    </main>
   )
 } 
