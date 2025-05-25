@@ -2,9 +2,10 @@
 
 interface FillerRatingProps {
   rating: number
+  className?: string
 }
 
-export default function FillerRating({ rating }: FillerRatingProps) {
+export default function FillerRating({ rating, className = '' }: FillerRatingProps) {
   const getRatingColor = (rating: number) => {
     if (rating <= 2) return 'text-green-500'
     if (rating <= 4) return 'text-yellow-500'
@@ -18,7 +19,7 @@ export default function FillerRating({ rating }: FillerRatingProps) {
   }
 
   return (
-    <div className="flex items-center gap-2">
+    <div className={`flex items-center gap-2 ${className}`}>
       <span className={`text-sm font-semibold ${getRatingColor(rating)}`}>
         {getRatingText(rating)}
       </span>
