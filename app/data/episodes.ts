@@ -76,13 +76,13 @@ const seasonEpisodes: SeasonEpisodes = {
       title: "A CACCIA DI HOLLOW",
       description: "Il secondo episodio introduttivo di BLEACH Core, dove Kurosaki Ichigo inizia il suo lavoro da Sostituto Shinigami insieme a Kuchiki Rukia. Nel frattempo, un Hollow particolarmente potente minaccia la città di Karakura.",
       fillerRating: 1, // maggiormente canon
-      videoUrl: "" // Add video URL when available
+      videoUrl: "https://short.icu/eG5dnlkQl" // Add video URL when available
     },
     3: {
       title: "IL POTERE NASCOSTO",
       description: "Il terzo episodio introduttivo di BLEACH Core, dove vengono introdotti i poteri di Yatsura Sado, un 15enne che frequenta la stessa scuola di Kurosaki Ichigo.",
       fillerRating: 0, // maggiormente canon
-      videoUrl: "" // Add video URL when available
+      videoUrl: "https://short.icu/hrJZP0Ta-" // Add video URL when available
     }
   },
   2: {
