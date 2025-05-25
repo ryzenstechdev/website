@@ -1,14 +1,17 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
-  reactStrictMode: true,
   output: 'export',
   images: {
     unoptimized: true,
-    domains: ['raw.githubusercontent.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
-  assetPrefix: isProd ? '/website/' : '',
-  basePath: isProd ? '/website' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/website' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/website/' : '',
   // Ensure public assets are copied correctly
   webpack: (config) => {
     config.module.rules.push({
