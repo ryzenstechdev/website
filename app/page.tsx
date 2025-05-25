@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { seasons } from './data/episodes'
 import { getEpisodeData } from './data/episodes'
+import { getAssetPath } from './utils/paths'
 
 // Slideshow images
 const slideshowImages = [
@@ -35,7 +36,7 @@ export default function Home() {
             <div className="max-w-2xl space-y-6">
               <div className="relative w-[300px] h-[100px]">
                 <Image
-                  src="/assets/logo.png"
+                  src={getAssetPath('/assets/logo.png')}
                   alt="BLEACH Core"
                   fill
                   className="object-contain object-left"
@@ -68,7 +69,7 @@ export default function Home() {
                     <div key={episode.id} className="episode-card group">
                       <div className="episode-thumbnail">
                         <Image
-                          src={episode.thumbnail}
+                          src={getAssetPath(episode.thumbnail)}
                           alt={episode.title}
                           fill
                           className="object-cover transition-transform group-hover:scale-105"
