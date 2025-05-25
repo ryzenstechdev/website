@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
+  reactStrictMode: true,
   output: 'export',
-  basePath: '/bleach-core',
   images: {
     unoptimized: true,
     domains: ['raw.githubusercontent.com'],
   },
-  trailingSlash: true,
-  assetPrefix: '/bleach-core/',
-  distDir: 'dist',
+  assetPrefix: isProd ? '/bleach-core/' : '',
+  basePath: isProd ? '/bleach-core' : '',
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig
