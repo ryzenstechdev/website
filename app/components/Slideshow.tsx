@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
-import { getAssetPath } from '@/app/utils/paths'
 
 interface SlideshowProps {
   images: string[]
@@ -30,7 +29,7 @@ export default function Slideshow({ images, interval = 5000 }: SlideshowProps) {
           }`}
         >
           <Image
-            src={getAssetPath(image)}
+            src={image}
             alt={`Slide ${index + 1}`}
             fill
             className="object-cover"

@@ -25,6 +25,7 @@ export default function VideoPlayer({ videoUrl, title }: VideoPlayerProps) {
       ></iframe>
       
       <div className="mt-4">
+        <h1 className="text-2xl font-bold text-white">{title}</h1>
       </div>
     </div>
   )
