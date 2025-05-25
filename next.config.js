@@ -9,6 +9,14 @@ const nextConfig = {
   },
   assetPrefix: isProd ? '/website/' : '',
   basePath: isProd ? '/website' : '',
+  // Ensure public assets are copied correctly
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.(png|jpe?g|gif|svg)$/i,
+      type: 'asset/resource',
+    });
+    return config;
+  },
 }
 
 module.exports = nextConfig

@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { getAssetPath } from '@/app/utils/paths'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,7 +16,7 @@ export default function Navbar() {
           <Link href="/" className="flex-shrink-0">
             <div className="relative w-32 h-10">
               <Image
-                src="/assets/logo.png"
+                src={getAssetPath('/assets/logo.png')}
                 alt="BLEACH Core"
                 fill
                 className="object-contain"
