@@ -29,7 +29,7 @@ export default function Hero() {
           </p>
           <a
             href="#content"
-            className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition duration-300"
+            className="bg-[#FF6A00] hover:bg-[#FF8533] text-white font-bold py-3 px-8 rounded-full transition duration-300"
           >
             Esplora
           </a>

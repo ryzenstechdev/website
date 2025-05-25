@@ -1,31 +1,34 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 interface VideoPlayerProps {
-  videoUrl: string
-  title: string
+  src: string
+  poster?: string
+  autoPlay?: boolean
 }
 
-export default function VideoPlayer({ videoUrl, title }: VideoPlayerProps) {
-  const [isLoading, setIsLoading] = useState(true)
+export default function VideoPlayer({ src, poster, autoPlay = false }: VideoPlayerProps) {
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.load()
+    }
+  }, [src])
 
   return (
-    <div className="w-full aspect-video bg-black relative">
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-netflix-red"></div>
-        </div>
-      )}
-      <iframe
-        src={videoUrl}
+    <div className="relative w-full aspect-video bg-black">
+      <video
+        ref={videoRef}
         className="w-full h-full"
-        allowFullScreen
-        onLoad={() => setIsLoading(false)}
-      ></iframe>
-      
-      <div className="mt-4">
-      </div>
+        controls
+        poster={poster}
+        autoPlay={autoPlay}
+      >
+        <source src={src} type="video/mp4" />
+        Il tuo browser non supporta il tag video.
+      </video>
     </div>
   )
 } 
