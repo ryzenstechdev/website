@@ -8,19 +8,19 @@ const episodes = [
   {
     id: 1,
     title: 'Episodio 1: Il Giorno in cui sono diventato uno Shinigami',
-    thumbnail: '/assets/thumbnails/ep1.jpg',
+    thumbnail: '/assets/thumbnails/1/ep1.jpg',
     description: 'Ichigo Kurosaki incontra Rukia Kuchiki e diventa uno Shinigami',
   },
   {
     id: 2,
     title: 'Episodio 2: Il Lavoro di uno Shinigami',
-    thumbnail: '/assets/thumbnails/ep2.jpg',
+    thumbnail: '/assets/thumbnails/1/ep2.jpg',
     description: 'Ichigo inizia il suo lavoro come Shinigami sostituto',
   },
   {
     id: 3,
     title: 'Episodio 3: Il Fratello Maggiore',
-    thumbnail: '/assets/thumbnails/ep3.jpg',
+    thumbnail: '/assets/thumbnails/1/ep3.jpg',
     description: 'Ichigo incontra il fratello maggiore di Rukia',
   },
 ]

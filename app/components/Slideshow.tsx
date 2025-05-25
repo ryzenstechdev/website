@@ -14,19 +14,19 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    image: '/assets/slideshow/slide1.jpg',
+    image: '/assets/1.jpg',
     title: 'BLEACH: Thousand-Year Blood War',
     description: 'La guerra finale tra Shinigami e Quincy',
   },
   {
     id: 2,
-    image: '/assets/slideshow/slide2.jpg',
+    image: '/assets/2.jpg',
     title: 'BLEACH: The Lost Agent',
     description: 'La saga del Fullbring e il ritorno dei poteri',
   },
   {
     id: 3,
-    image: '/assets/slideshow/slide3.jpg',
+    image: '/assets/3.jpg',
     title: 'BLEACH: Arrancar',
     description: 'La battaglia contro gli Arrancar e Aizen',
   },
