@@ -93,7 +93,10 @@ export default function EpisodePlayer({ episode }: EpisodePlayerProps) {
             </select>
           </div>
           <div className="aspect-video w-full">
-            <VideoPlayer videoUrl={episode.videoUrl} />
+            <VideoPlayer 
+              videoUrl={episode.videoUrl} 
+              title={episode.title}
+            />
           </div>
         </div>
 
