@@ -72,17 +72,17 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://github.com/bleachcore"
+                  href="https://x.com/ryzenstechdev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white"
                 >
-                  GitHub
+                  Twitter
                 </a>
               </li>
               <li>
                 <a
-                  href="https://discord.gg/bleachcore"
+                  href="https://dsc.gg/teamshinigamicore"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white"
