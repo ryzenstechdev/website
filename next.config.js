@@ -7,8 +7,8 @@ const nextConfig = {
     unoptimized: true,
     domains: ['raw.githubusercontent.com'],
   },
-  assetPrefix: isProd ? '/bleach-core/' : '',
-  basePath: isProd ? '/bleach-core' : '',
+  assetPrefix: isProd ? '/website/' : '',
+  basePath: isProd ? '/website' : '',
 }
 
 module.exports = nextConfig

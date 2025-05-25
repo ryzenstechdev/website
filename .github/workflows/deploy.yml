@@ -26,15 +26,15 @@ jobs:
           node-version: "20"
           cache: 'npm'
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Build with Next.js
         run: npm run build
       - name: Create .nojekyll file
-        run: touch dist/.nojekyll
+        run: touch out/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./out
 
   deploy:
     environment:
