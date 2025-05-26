@@ -90,6 +90,16 @@ export default function Footer() {
                   Discord
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://drive.google.com/drive/folders/18_oN9bjSCgogoKax9Wr_BVHXeqRU0zpa?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white"
+                >
+                  Assets
+                </a>
+              </li>
             </ul>
           </div>
         </div>
