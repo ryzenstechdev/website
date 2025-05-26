@@ -43,7 +43,7 @@ export default function Home() {
                 />
               </div>
               <p className="text-lg md:text-xl text-gray-300">
-                Sperimenta i capitoli più importanti di BLEACH, selezionati per l'esperienza di visione più completa.
+                Sperimenta i capitoli più importanti di BLEACH, selezionati per l'esperienza di visione più completa. Nota che non riceviamo alcuna forma di guadagno dalle pubblicità, sono fornite dal servizio di Video Hosting a cui ci affidiamo.
               </p>
               <Link 
                 href="/episodes/s1/1"
