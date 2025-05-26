@@ -16,13 +16,6 @@ export default function AboutPage() {
               </p>
               <p>Se ti piacciono gli anime, i videogiochi e passare ore in vocale con una community attiva, sei nel posto giusto.</p>
             </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-netflix-orange mb-4">Intro Custom, Logo e Branding</h2>
-              <p className="leading-relaxed">Potete trovare tutti i nostri Banner, Loghi, Intro in formato .mp4 da poter integrare nel vostro Media server come Jellyfin, Plex o altro sul seguente link:</p>
-              <br></br>
-              <a className="font-semibold text-netflix-orange hover:text-netflix-orange-hover transition-colors" href="https://drive.google.com/drive/folders/18_oN9bjSCgogoKax9Wr_BVHXeqRU0zpa?usp=sharing">Google Drive</a>
-            </section>
           </div>
         </div>
       </main>
