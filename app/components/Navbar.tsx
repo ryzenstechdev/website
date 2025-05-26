@@ -35,7 +35,7 @@ export default function Navbar() {
                 Guarda Ora
               </Link>
               <Link href="/about" className="text-white hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">
-                About
+                Sponsorship
               </Link>
             </div>
           </div>
@@ -96,7 +96,7 @@ export default function Navbar() {
               className="text-white hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
-              About
+              Sponsorship
             </Link>
           </div>
         </div>
