@@ -7,45 +7,15 @@ export default function AboutPage() {
       <Navbar />
       <main className="min-h-screen bg-netflix-black pt-20">
         <div className="max-w-4xl mx-auto px-4 py-12">
-          <h1 className="text-4xl font-bold text-white mb-8">Chi Siamo</h1>
+          <h1 className="text-4xl font-bold text-white mb-8">Sponsorship</h1>
           
           <div className="space-y-8 text-gray-300">
             <section>
-              <h2 className="text-2xl font-semibold text-netflix-orange mb-4">La Nostra Missione</h2>
+              <h2 className="text-2xl font-semibold text-netflix-orange mb-4">I Nostri Sponsor:</h2>
               <p className="leading-relaxed">
-                BLEACH Core nasce dalla passione per l'anime BLEACH e dalla volontà di offrire ai fan un'esperienza di visione ottimizzata. 
-                Il nostro obiettivo è permettere agli spettatori di godere della storia principale di BLEACH senza dover affrontare 
-                episodi filler non essenziali.
+                - <a className="font-semibold text-netflix-orange hover:text-netflix-orange-hover transition-colors" href="https://discord.gg/w3jGFXC5xf">Aserix's HOME (Discord Server)</a>
               </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-netflix-orange mb-4">Cosa Offriamo</h2>
-              <ul className="list-disc list-inside space-y-2">
-                <li>Episodi selezionati della serie principale</li>
-                <li>Indicatore di rilevanza per ogni episodio</li>
-                <li>Interfaccia moderna e responsive</li>
-                <li>Streaming di alta qualità</li>
-                <li>Possibilità di download degli episodi</li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-netflix-orange mb-4">Perché BLEACH Core?</h2>
-              <p className="leading-relaxed">
-                BLEACH è una serie con molti episodi filler che, sebbene interessanti, possono distrarre dalla trama principale. 
-                BLEACH Core è stato creato per offrire un'esperienza di visione più concentrata e coinvolgente, permettendo agli 
-                spettatori di seguire la storia principale senza interruzioni.
-              </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-netflix-orange mb-4">Disclaimer</h2>
-              <p className="leading-relaxed">
-                BLEACH Core è un progetto fan-made creato per scopi educativi e di intrattenimento. 
-                Non siamo affiliati con Tite Kubo, Shueisha, o qualsiasi altra entità legata alla produzione di BLEACH. 
-                Tutti i diritti di BLEACH appartengono ai rispettivi proprietari.
-              </p>
+              <p>Se ti piacciono gli anime, i videogiochi e passare ore in vocale con una community attiva, sei nel posto giusto.</p>
             </section>
 
             <section>
