@@ -11,7 +11,6 @@ export default function AboutPage() {
           
           <div className="space-y-8 text-gray-300">
             <section>
-              <h2 className="text-2xl font-semibold text-netflix-orange mb-4">I Nostri Sponsor:</h2>
               <p className="leading-relaxed">
                 - <a className="font-semibold text-netflix-orange hover:text-netflix-orange-hover transition-colors" href="https://discord.gg/w3jGFXC5xf">Aserix's HOME (Discord Server)</a>
               </p>
