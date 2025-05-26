@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-400 text-sm">
-              Sperimenta i capitoli più importanti di BLEACH, selezionati per l'esperienza di visione più completa.
+              Sperimenta i capitoli più importanti di BLEACH, selezionati per l'esperienza di visione più completa. Progetto senza scopo di lucro, non riceviamo alcun guadagno dalle pubblicità nè in altri modi.
             </p>
           </div>
 
