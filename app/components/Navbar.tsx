@@ -31,8 +31,8 @@ export default function Navbar() {
               <Link href="/" className="text-white hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">
                 Home
               </Link>
-              <Link href="/episodes" className="text-white hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">
-                Episodi
+              <Link href="/episodes/s1/1" className="text-white hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">
+                Guarda Ora
               </Link>
               <Link href="/about" className="text-white hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium">
                 About
@@ -85,11 +85,11 @@ export default function Navbar() {
               Home
             </Link>
             <Link
-              href="/episodes"
+              href="/episodes/s1/1"
               className="text-white hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium"
               onClick={() => setIsMenuOpen(false)}
             >
-              Episodi
+              Guarda Ora
             </Link>
             <Link
               href="/about"
