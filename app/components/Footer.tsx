@@ -37,8 +37,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/episodes" className="text-gray-400 hover:text-white">
-                  Episodi
+                <Link href="/episodes/s1/1" className="text-gray-400 hover:text-white">
+                  Guarda Ora
                 </Link>
               </li>
               <li>
