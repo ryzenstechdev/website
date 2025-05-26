@@ -43,7 +43,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about" className="text-gray-400 hover:text-white">
-                  About
+                  Sponsorship
                 </Link>
               </li>
             </ul>
