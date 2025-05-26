@@ -35,7 +35,7 @@ export const seasons: Season[] = [
     id: 1, 
     name: "Stagione 1", 
     nickname: "Arco del Sostituto Shinigami",
-    episodeCount: 3
+    episodeCount: 4
   },
   { 
     id: 2, 
@@ -83,6 +83,12 @@ const seasonEpisodes: SeasonEpisodes = {
       description: "Il terzo episodio introduttivo di BLEACH Core, dove vengono introdotti i poteri di Yatsura Sado, un 15enne che frequenta la stessa scuola di Kurosaki Ichigo.",
       fillerRating: 0, // maggiormente canon
       videoUrl: "https://short.icu/hrJZP0Ta-" // Add video URL when available
+    },
+    4: {
+      title: "KON-GRATULAZIONI PER IL NUOVO ARRIVATO",
+      description: "Il quarto episodio introduttivo di BLEACH Core, dove viene introdotto Kon, un anima nascosta in uno degli oggetti venduti dall'emporio URAHARA.",
+      fillerRating: 1, // maggiormente canon
+      videoUrl: "" // Add video URL when available
     }
   },
   2: {
